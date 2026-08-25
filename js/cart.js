@@ -7,7 +7,7 @@
 
 /* >>> IMPORTANTE: troque pelo número de WhatsApp real da loja
    no formato DDI+DDD+numero, apenas dígitos. Ex: 55 11 91234-5678 */
-const FABY_WHATSAPP = "5511999999999";
+const FABY_WHATSAPP = "5511911967715";
 const FABY_CART_KEY = "faby_boutique_cart_v1";
 
 function fabyGetCart() {

@@ -74,7 +74,7 @@ table{max-width:100%;}
 
 /* ---------- header ---------- */
 header.site{
-  position:sticky;top:0;z-index:50;background:rgba(253,249,246,.92);
+  position:sticky;top:0;z-index:70;background:rgba(253,249,246,.92);
   backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
 }
 .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:12px;}
@@ -99,12 +99,15 @@ header.site{
 
 @media(max-width:860px){
   .nav-links{
-    position:fixed;inset:64px 0 0 0;background:var(--cream);flex-direction:column;
-    justify-content:flex-start;padding:36px 24px;gap:22px;transform:translateX(100%);
-    transition:.3s ease;overflow-y:auto;
+    position:fixed;top:0;right:0;bottom:0;left:auto;
+    width:70%;max-width:360px;height:100vh;height:100dvh;
+    background:var(--blush);flex-direction:column;z-index:60;
+    justify-content:flex-start;padding:96px 28px 40px;gap:22px;
+    transform:translateX(100%);transition:.3s ease;overflow-y:auto;
+    box-shadow:-10px 0 40px rgba(36,28,30,.18);
   }
   .nav-links.open{transform:translateX(0);}
-  .burger{display:block;}
+  .burger{display:block;position:relative;z-index:80;}
 }
 
 @media(max-width:400px){
