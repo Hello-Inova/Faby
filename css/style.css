@@ -103,10 +103,16 @@ header.site{
     width:70%;max-width:360px;height:100vh;height:100dvh;
     background:var(--blush);flex-direction:column;z-index:60;
     justify-content:flex-start;padding:96px 28px 40px;gap:22px;
-    transform:translateX(100%);transition:.3s ease;overflow-y:auto;
+    transform:translateX(100%);overflow-y:auto;
     box-shadow:-10px 0 40px rgba(36,28,30,.18);
+    visibility:hidden;pointer-events:none;opacity:0;
+    transition:transform .3s ease,opacity .3s ease,visibility 0s linear .3s;
+    will-change:transform;
   }
-  .nav-links.open{transform:translateX(0);}
+  .nav-links.open{
+    transform:translateX(0);visibility:visible;pointer-events:auto;opacity:1;
+    transition:transform .3s ease,opacity .3s ease,visibility 0s linear 0s;
+  }
   .burger{display:block;position:relative;z-index:80;}
 }
 
