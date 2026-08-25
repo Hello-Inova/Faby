@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha sacola · Faby Boutique</title>
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="announce">✨ Novidades toda semana · Compre online e retire na loja ou receba em casa ✨</div>
+
+<header class="site">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="img/logo.jpg" alt="Faby Boutique">
+      <span>Faby<small>Boutique</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" data-page="index.html">Início</a>
+      <a href="produtos.html" data-page="produtos.html">Loja</a>
+      <a href="produtos.html?categoria=vestidos" data-page="produtos.html">Vestidos</a>
+      <a href="produtos.html?categoria=conjuntos" data-page="produtos.html">Conjuntos</a>
+      <a href="sobre.html" data-page="sobre.html">Sobre</a>
+      <a href="contato.html" data-page="contato.html">Contato</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="carrinho.html" class="icon-btn" title="Sacola">🛍️<span class="cart-count" data-cart-count>0</span></a>
+      <button class="burger" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Início</a> / Minha sacola</div>
+    <h1>Minha sacola</h1>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+
+    <div class="cart-empty" id="cart-empty">
+      <div class="perk-icon" style="margin:0 auto 18px;">🛍️</div>
+      <h3>Sua sacola está vazia</h3>
+      <p>Que tal dar uma olhada nas nossas peças?</p>
+      <a href="produtos.html" class="btn btn-primary">Ir para a loja</a>
+    </div>
+
+    <div class="cart-layout" id="cart-layout" style="display:none;">
+      <div>
+        <div id="cart-items"></div>
+      </div>
+      <div class="summary-box">
+        <h3>Resumo do pedido</h3>
+        <div class="summary-row"><span>Subtotal</span><span id="cart-subtotal">R$ 0,00</span></div>
+        <div class="summary-row"><span>Frete</span><span>A combinar</span></div>
+        <div class="summary-row total"><span>Total</span><span id="cart-total">R$ 0,00</span></div>
+        <input type="text" id="checkout-nome" placeholder="Seu nome (opcional)">
+        <button class="btn btn-whats btn-block" style="margin-top:16px;" onclick="fabyCheckoutWhatsApp()">Finalizar pelo WhatsApp</button>
+        <p style="font-size:.78rem;color:#8c7a7d;margin-top:12px;">Ao finalizar, vamos abrir uma conversa no WhatsApp com o resumo do seu pedido para confirmarmos tamanho, frete e forma de pagamento.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="img/logo.jpg" alt="Faby Boutique">
+          <span>Faby Boutique</span>
+        </div>
+        <p>Moda feminina com identidade própria. Vestidos e conjuntos para valorizar quem você é.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/_fabyboutique_/" target="_blank" rel="noopener" title="Instagram">📷</a>
+          <a href="#" id="footer-whats-link" title="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div>
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Loja</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Categorias</h5>
+        <ul>
+          <li><a href="produtos.html?categoria=vestidos">Vestidos</a></li>
+          <li><a href="produtos.html?categoria=conjuntos">Conjuntos</a></li>
+          <li><a href="carrinho.html">Minha sacola</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Receba novidades</h5>
+        <p>Assine e seja a primeira a saber dos lançamentos.</p>
+        <form id="newsletter-form">
+          <div class="form-field">
+            <input type="email" placeholder="Seu melhor e-mail" required>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Assinar</button>
+        </form>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Faby Boutique. Todos os direitos reservados.</span>
+      <span>Site desenvolvido com 💗 para a Faby Boutique</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="faby-toast"></div>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("footer-whats-link").href = `https://wa.me/${FABY_WHATSAPP}`;
+  document.getElementById("footer-whats-link").target = "_blank";
+</script>
+</body>
+</html>

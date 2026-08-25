@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produto · Faby Boutique</title>
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="announce">✨ Novidades toda semana · Compre online e retire na loja ou receba em casa ✨</div>
+
+<header class="site">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="img/logo.jpg" alt="Faby Boutique">
+      <span>Faby<small>Boutique</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" data-page="index.html">Início</a>
+      <a href="produtos.html" data-page="produtos.html" class="active">Loja</a>
+      <a href="produtos.html?categoria=vestidos" data-page="produtos.html">Vestidos</a>
+      <a href="produtos.html?categoria=conjuntos" data-page="produtos.html">Conjuntos</a>
+      <a href="sobre.html" data-page="sobre.html">Sobre</a>
+      <a href="contato.html" data-page="contato.html">Contato</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="carrinho.html" class="icon-btn" title="Sacola">🛍️<span class="cart-count" data-cart-count>0</span></a>
+      <button class="burger" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="page-hero" style="padding:36px 0;">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Início</a> / <a href="produtos.html">Loja</a> / Produto</div>
+  </div>
+</div>
+
+<section style="padding-top:24px;">
+  <div class="container">
+    <div class="product-detail" id="product-detail">
+      <!-- preenchido via JS (main.js) -->
+    </div>
+
+    <h3 class="related-heading" style="text-align:center;">Você também pode gostar</h3>
+    <div class="grid" id="related-grid" style="margin-top:30px;"></div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="img/logo.jpg" alt="Faby Boutique">
+          <span>Faby Boutique</span>
+        </div>
+        <p>Moda feminina com identidade própria. Vestidos e conjuntos para valorizar quem você é.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/_fabyboutique_/" target="_blank" rel="noopener" title="Instagram">📷</a>
+          <a href="#" id="footer-whats-link" title="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div>
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Loja</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Categorias</h5>
+        <ul>
+          <li><a href="produtos.html?categoria=vestidos">Vestidos</a></li>
+          <li><a href="produtos.html?categoria=conjuntos">Conjuntos</a></li>
+          <li><a href="carrinho.html">Minha sacola</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Receba novidades</h5>
+        <p>Assine e seja a primeira a saber dos lançamentos.</p>
+        <form id="newsletter-form">
+          <div class="form-field">
+            <input type="email" placeholder="Seu melhor e-mail" required>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Assinar</button>
+        </form>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Faby Boutique. Todos os direitos reservados.</span>
+      <span>Site desenvolvido com 💗 para a Faby Boutique</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="faby-toast"></div>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("footer-whats-link").href = `https://wa.me/${FABY_WHATSAPP}`;
+  document.getElementById("footer-whats-link").target = "_blank";
+</script>
+</body>
+</html>

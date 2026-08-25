@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faby Boutique · Moda feminina com atitude</title>
+<meta name="description" content="Faby Boutique — vestidos, conjuntos e peças autorais para todos os corpos. Compre online e finalize pelo WhatsApp.">
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="announce">✨ Novidades toda semana · Compre online e retire na loja ou receba em casa ✨</div>
+
+<header class="site">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="img/logo.jpg" alt="Faby Boutique">
+      <span>Faby<small>Boutique</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" data-page="index.html" class="active">Início</a>
+      <a href="produtos.html" data-page="produtos.html">Loja</a>
+      <a href="produtos.html?categoria=vestidos" data-page="produtos.html">Vestidos</a>
+      <a href="produtos.html?categoria=conjuntos" data-page="produtos.html">Conjuntos</a>
+      <a href="sobre.html" data-page="sobre.html">Sobre</a>
+      <a href="contato.html" data-page="contato.html">Contato</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="carrinho.html" class="icon-btn" title="Sacola">🛍️<span class="cart-count" data-cart-count>0</span></a>
+      <button class="burger" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Coleção Atual</span>
+      <h1>Moda feminina que veste <em>todas</em> as histórias</h1>
+      <p>Peças autorais, cores marcantes e caimento pensado para valorizar cada corpo. Direto da nossa loja física para você, com atendimento próximo pelo WhatsApp.</p>
+      <div class="hero-actions">
+        <a href="produtos.html" class="btn btn-primary">Ver coleção</a>
+        <a href="https://www.instagram.com/_fabyboutique_/" target="_blank" rel="noopener" class="btn btn-outline">Siga no Instagram</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="img/produtos/vestido-vermelho-festa.jpg" alt="Vestido Faby Boutique">
+      <div class="hero-badge">
+        <span class="num">+5</span>
+        <span>anos vestindo mulheres reais com estilo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="container">
+    <span>Frete combinado pelo WhatsApp</span>
+    <span>Tamanhos do P ao GG</span>
+    <span>Troca facilitada em 7 dias</span>
+    <span>Pagamento no PIX, cartão ou na loja</span>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Categorias</span>
+      <h2>Escolha seu próximo look</h2>
+      <p>Do dia a dia às ocasiões especiais — cada peça é escolhida a dedo para a nossa cliente.</p>
+    </div>
+    <div class="cats">
+      <a class="cat-card" href="produtos.html?categoria=vestidos">
+        <img src="img/produtos/vestido-longo-marsala.jpg" alt="Vestidos Faby Boutique">
+        <div class="cat-overlay"><div><span>Explorar</span><h3>Vestidos</h3></div></div>
+      </a>
+      <a class="cat-card" href="produtos.html?categoria=conjuntos">
+        <img src="img/produtos/conjunto-camisa-calca-verde.jpg" alt="Conjuntos Faby Boutique">
+        <div class="cat-overlay"><div><span>Explorar</span><h3>Conjuntos</h3></div></div>
+      </a>
+      <a class="cat-card" href="produtos.html">
+        <img src="img/vitrine-loja.jpg" alt="Vitrine Faby Boutique">
+        <div class="cat-overlay"><div><span>Explorar</span><h3>Coleção completa</h3></div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--blush-soft);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Selecionados para você</span>
+      <h2>Destaques da semana</h2>
+    </div>
+    <div class="grid" id="featured-grid"></div>
+    <div style="text-align:center;margin-top:44px;">
+      <a href="produtos.html" class="btn btn-outline">Ver todos os produtos</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="perks">
+      <div class="perk">
+        <div class="perk-icon">💬</div>
+        <h4>Atendimento humanizado</h4>
+        <p>Fale direto com a loja pelo WhatsApp para tirar dúvidas e fechar seu pedido.</p>
+      </div>
+      <div class="perk">
+        <div class="perk-icon">📏</div>
+        <h4>Do P ao GG</h4>
+        <p>Peças pensadas para vestir mulheres reais, com caimento que valoriza cada corpo.</p>
+      </div>
+      <div class="perk">
+        <div class="perk-icon">🚚</div>
+        <h4>Entrega combinada</h4>
+        <p>Retirada na loja ou envio para todo o Brasil, com frete combinado no atendimento.</p>
+      </div>
+      <div class="perk">
+        <div class="perk-icon">💳</div>
+        <h4>Pagamento facilitado</h4>
+        <p>PIX, cartão ou na loja física — você escolhe a forma mais prática.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--cream);">
+  <div class="container about-split">
+    <img src="img/vitrine-loja.jpg" alt="Loja Faby Boutique">
+    <div>
+      <span class="eyebrow">Nossa história</span>
+      <h2>Uma boutique feita de afeto e bom gosto</h2>
+      <p>A Faby Boutique nasceu do desejo de vestir mulheres reais com peças que têm personalidade — cores vibrantes, tecidos que caem bem e um atendimento de perto, como só uma loja de bairro sabe fazer. Cada visita à loja é pensada para você se sentir especial, e agora essa experiência chega até você também pelo site.</p>
+      <a href="sobre.html" class="btn btn-primary">Conheça nossa história</a>
+      <p class="signature">— Equipe Faby Boutique</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <span class="eyebrow" style="color:#ffd6ea;">@_fabyboutique_</span>
+    <h2>Nos siga no Instagram</h2>
+    <p>Acompanhe lançamentos, promoções e os bastidores da loja em primeira mão.</p>
+    <a href="https://www.instagram.com/_fabyboutique_/" target="_blank" rel="noopener" class="btn btn-outline">Seguir @_fabyboutique_</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="img/logo.jpg" alt="Faby Boutique">
+          <span>Faby Boutique</span>
+        </div>
+        <p>Moda feminina com identidade própria. Vestidos e conjuntos para valorizar quem você é.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/_fabyboutique_/" target="_blank" rel="noopener" title="Instagram">📷</a>
+          <a href="#" id="footer-whats-link" title="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div>
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Loja</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Categorias</h5>
+        <ul>
+          <li><a href="produtos.html?categoria=vestidos">Vestidos</a></li>
+          <li><a href="produtos.html?categoria=conjuntos">Conjuntos</a></li>
+          <li><a href="carrinho.html">Minha sacola</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Receba novidades</h5>
+        <p>Assine e seja a primeira a saber dos lançamentos.</p>
+        <form id="newsletter-form">
+          <div class="form-field">
+            <input type="email" placeholder="Seu melhor e-mail" required>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Assinar</button>
+        </form>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Faby Boutique. Todos os direitos reservados.</span>
+      <span>Site desenvolvido com 💗 para a Faby Boutique</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="faby-toast"></div>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("footer-whats-link").href = `https://wa.me/${FABY_WHATSAPP}`;
+  document.getElementById("footer-whats-link").target = "_blank";
+  fabyRenderGrid("featured-grid", FABY_PRODUCTS.slice(0, 4));
+</script>
+</body>
+</html>
